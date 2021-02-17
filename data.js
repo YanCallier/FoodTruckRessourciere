@@ -9,7 +9,7 @@ data = {
       title: "Réduire ses déchets",
       welcomeMessage: "TEXTE D'INTRO MISSION",
       doc: "doc1",
-      image: "img/enigmeTest.jpg",
+      image: "test_poubelle.png",
       zones: {
         emballage: {
           top: "35%",
