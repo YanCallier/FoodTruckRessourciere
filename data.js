@@ -6,12 +6,12 @@ data = {
   landscapeMessage: "Veuillez passer en mode paysage pour jouer",
   enigmes: [
     {
-      title: "Itinéraire d'un burger",
-      welcomeMessage: "Bienvenue dans l'itinéraire d'un burger !",
+      title: "Réduire ses déchets",
+      welcomeMessage: "TEXTE D'INTRO MISSION",
       doc: "doc1",
       image: "img/enigmeTest.jpg",
       zones: {
-        bananes: {
+        emballage: {
           top: "35%",
           left: "70%",
           width: "15%",
@@ -19,7 +19,7 @@ data = {
           border: "1px solid black",
           wrongText: "humm.. non ça c'est une banane",
         },
-        torchon: {
+        produit: {
           top: "10%",
           left: "60%",
           width: "12%",
@@ -27,7 +27,7 @@ data = {
           border: "1px solid black",
           wrongText: "Non le torchon ça marche pas",
         },
-        listeCourse: {
+        bocal: {
           top: "60%",
           left: "50%",
           width: "20%",
@@ -35,7 +35,7 @@ data = {
           border: "1px solid black",
           wrongText: "Non la liste de courses ça marche pas",
         },
-        yaourt: {
+        bouteille: {
           top: "10%",
           left: "30%",
           width: "20%",
@@ -62,46 +62,76 @@ data = {
       },
       questions: [
         {
-          questionImage: "Retrouve un objet qui te permet d’économiser",
-          answerImage: "listeCourse",
+          questionImage: "Trouve un déchet que tu peux refuser lors de ton achat.",
+          answerImage: "emballage",
           qcm: {
             question:
-              "Quelle quantité de plats non déballés est jetée par an pour une personne ?",
-            propositions: ["7Kg", "2Kg", "10Kg", "5Kg"],
-            answer: "7Kg",
+              "Quelle quantité de déchet est produite en moyenne par un français chaque année ?",
+            propositions: ["278 Kg", "344 Kg", "568 Kg", "690 Kg"],
+            answer: "568 Kg",
             correction:
-              "Une personne jette 7 kg de plat non déballé par an. Faire sa liste de course permet d’acheter seulement ce dont on a besoin.",
+              "Un français produit chaque année 573 kg de déchets. Les objets dont vous n’avez pas besoin ou ceux à usage unique. Pour cela il faut prévoir des objets réutilisables (gourde, beewrap, sac en tissus..).",
           },
         },
         {
           questionImage:
-            "Retrouve un élément qui permet de conserver le pain plus longtemps",
-          answerImage: "torchon",
+            "Trouve un déchet que tu peux réduire en le fabriquant par toi-même.",
+          answerImage: "produit",
           qcm: {
             question:
-              "Quelle quantité de pain est gaspillée à la maison pour une personne ?",
-            propositions: ["4Kg", "500g", "1Kg", "3Kg"],
-            answer: "4Kg",
+              "Avec du vinaigre je peux :",
+            propositions: ["Fabriquer un produit multi-usage", "Faire la vaisselle", "Assouplir le linge", "Nettoyer le sol"],
+            answer: "Fabriquer un produit multi-usage", "Assouplir le linge",
             correction:
-              "Une personne jette 4 kg de pain par an en moyenne. Le pain se conserve plus longtemps dans un torchon, on peut aussi en faire du pain perdu.",
+              "Le vinaigre est un produit de base très économique qui remplis de multiples usages. Sa consommation en repensant ses besoins. Des produits de bases très économiques permettent répondre à de nombreuses utilités et d’éviter l’achat de produits transformés sur-emballés. ",
           },
         },
         {
-          questionImage:
-            "Retrouve un aliment qui se consomme encore 2 semaines après sa date de péremption.",
-          answerImage: "yaourt",
+            questionImage:
+            "Trouve un déchet que tu peux réutiliser",
+          answerImage: "bocal",
           qcm: {
             question:
-              "Le CO2 émis par la production d’un yaourt est équivalent à un trajet de :",
+              "Quel est le principal moyen de traitement des déchets en France ?",
             propositions: [
-              "12 km en voiture",
-              "20 km en voiture",
-              "3 km en voiture",
-              "9 km en voiture",
+              "L'incinération",
+              "Le recyclage",
+              "L'enffouisement",
             ],
-            answer: "12 km en voiture",
+            answer: "L'incinération",
             correction:
-              "La production de nos aliments a nécessité des ressources et du transport. Lorsque l’on jette un produit, ce sont toutes ses ressources utilisées qui sont gaspillées.",
+              "Avant d’être un déchet, un objet peut trouver une nouvelle utilité. Vous pouvez l’utiliser en l’état ou en faire autre chose.",
+          },
+        },
+        {
+          questionImage:
+            "Trouve un objet qui peut être recyclé.",
+          answerImage: "bouteille",
+          qcm: {
+            question:
+              "Quelle est la proportion de nos déchets qui sont recyclés aujourd’hui ? ",
+            propositions: ["Fabriquer un produit multi-usage", "Faire la vaisselle", "Assouplir le linge", "Nettoyer le sol"],
+            answer: "Fabriquer un produit multi-usage", "Assouplir le linge",
+            correction:
+              "Le tri n’est pas encore optimisé. Pour trier correctement, renseignez-vous auprès de votre collectivité.",
+          },
+        },
+        {
+          questionImage:
+            "Trouve un objet qui peut être composté.",
+          answerImage: "pomme",
+          qcm: {
+            question:
+              "Quelle proportion de nos déchets ménagers sont compostables ?",
+            propositions: [
+              "5%",
+              "10%",
+              "15%",
+              "27%",
+            ],
+            answer: "27%",
+            correction:
+              "Le compostage permet de valoriser 27% de nos déchets ménagers en engrais. Un compost bien géré reste sain et sans odeurs !",
           },
         },
       ],
