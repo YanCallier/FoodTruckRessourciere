@@ -8,7 +8,7 @@ data = {
     {
       title: "Réduire ses déchets",
       welcomeMessage: "TEXTE D'INTRO MISSION",
-      doc: "doc1",
+      doc: "doc3",
       image: "test_poubelle.png",
       zones: {
         emballage: {
@@ -137,8 +137,8 @@ data = {
       ],
     },
     {
-      title: "Itinéraire d'un burger 2",
-      welcomeMessage: "Bienvenue dans l'itinéraire d'un burger !",
+      title: "Acheter responsable",
+      welcomeMessage: "Texte d'introduction",
       doc: "doc2",
       image: "img/enigmeTest.jpg",
       zones: {
